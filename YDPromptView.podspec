@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
-  s.name     = 'YDExtension'
+  s.name     = 'YDPromptView'
   s.version  = '1.0.0'
   s.license  = 'MIT'
-  s.summary  = 'A delightful iOS and OS X YDExtension framework.'
-  s.homepage = 'https://github.com/wangyund/YDExtension'
-  s.social_media_url = 'https://github.com/wangyund/YDExtension'
+  s.summary  = 'A delightful iOS and OS X YDPromptView framework.'
+  s.homepage = 'https://github.com/wangyund/YDPromptView'
+  s.social_media_url = 'https://github.com/wangyund/YDPromptView'
   s.authors  = { 'wangyund' => 'wuyezhiguhun@163.com' }
   s.source   = { :git => 'https://github.com/wangyund/YDPromptView.git', :tag => s.version, :submodules => true }
   s.requires_arc = true
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   end
 
-  s.subspec 'View' do |ss|
+  s.subspec 'Extension' do |ss|
     ss.source_files = 'YDPromptView/Extension/*.{h,m}'
 
   end
