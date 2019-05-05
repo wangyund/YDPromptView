@@ -9,18 +9,18 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/wangyund/YDPromptView.git', :tag => s.version, :submodules => true }
   s.requires_arc = true
   
-  s.public_header_files = 'YDPromptView/Headers/YDPromptView.h'
-  s.source_files = 'YDPromptView/Headers/YDPromptView.h'
+  s.public_header_files = 'YDPromptView/YDPromptView/Headers/YDPromptView.h'
+  s.source_files = 'YDPromptView/YDPromptView/Headers/YDPromptView.h'
 
   s.frameworks = 'UIKit','Foundation'  
   
   s.subspec 'PromptHUD' do |ss|
-    ss.source_files = 'YDPromptView/PromptHUD/*.{h,m}'
+    ss.source_files = 'YDPromptView/YDPromptView/PromptHUD/*.{h,m}'
 
   end
 
   s.subspec 'Extension' do |ss|
-    ss.source_files = 'YDPromptView/Extension/*.{h,m}'
+    ss.source_files = 'YDPromptView/YDPromptView/Extension/*.{h,m}'
 
   end
 
